@@ -4,13 +4,17 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
+var io = require('socket.io')();
 var routes = require('./routes/index');
 var users = require('./routes/users');
 var xss = require('./routes/xss');
-var receive = require('./routes/receive');
+var allSocket={};
+var receive = require('./routes/receive')(io,allSocket);
 var app = express();
 var orm = require('orm');
-var session=require('express-session');
+var session = require('express-session');
+
+
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
@@ -94,5 +98,18 @@ app.use(function (err, req, res, next) {
     });
 });
 
+app.io = io;
+io.on('connection', function (socket) {
+    console.log('socket连接成功');
+    socket.on('join', function(data) {
+        console.log(data.userName+'  join');
+        allSocket[data.userName]=socket;
+    });
+    socket.on('disconnect', function() {
+        console.log('断开连接');
+    });
+});
+
 
 module.exports = app;
+

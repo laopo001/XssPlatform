@@ -133,7 +133,7 @@ var $res = {};
 setTimeout(function(){
 	My.ajax({
 		type: "post",
-		url: 'http://localhost:1337/receive/do/$projectId',
+		url: 'http://localhost:3000/receive/do/$projectId',
 		data: My.formatQ($res),
 		success: function(data) {
 

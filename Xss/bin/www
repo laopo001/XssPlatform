@@ -7,3 +7,16 @@ app.set('port', process.env.PORT || 3000);
 var server = app.listen(app.get('port'), function() {
     debug('Express server listening on port ' + server.address().port);
 });
+
+app.io.attach(server)
+// var io=require('socket.io').listen(server);
+
+// io.sockets.on("connection", function(socket){
+//     console.log('成功');
+// 	io.sockets.emit('event', {pageIndex: "" });
+//     socket.on("event", function(data){
+//         //向客户端发命令
+//         io.sockets.send(data.content);
+//     });
+// 	socket.on('disconnect', function(){});
+// });

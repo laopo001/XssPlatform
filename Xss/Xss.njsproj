@@ -73,6 +73,7 @@
     <Folder Include="typings\globals\express\" />
     <Folder Include="typings\globals\form-data\" />
     <Folder Include="typings\globals\jade\" />
+    <Folder Include="typings\globals\javascript-obfuscator\" />
     <Folder Include="typings\globals\log4js\" />
     <Folder Include="typings\globals\mime\" />
     <Folder Include="typings\globals\moment\" />
@@ -82,6 +83,7 @@
     <Folder Include="typings\globals\node\" />
     <Folder Include="typings\globals\request\" />
     <Folder Include="typings\globals\serve-favicon\" />
+    <Folder Include="typings\globals\socket.io\" />
     <Folder Include="typings\globals\stylus\" />
     <Folder Include="typings\modules\" />
     <Folder Include="typings\modules\serve-static\" />
@@ -96,6 +98,7 @@
     <TypeScriptCompile Include="typings\globals\express\index.d.ts" />
     <TypeScriptCompile Include="typings\globals\form-data\index.d.ts" />
     <TypeScriptCompile Include="typings\globals\jade\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\javascript-obfuscator\index.d.ts" />
     <TypeScriptCompile Include="typings\globals\log4js\index.d.ts" />
     <TypeScriptCompile Include="typings\globals\mime\index.d.ts" />
     <TypeScriptCompile Include="typings\globals\moment\index.d.ts" />
@@ -105,6 +108,7 @@
     <TypeScriptCompile Include="typings\globals\node\index.d.ts" />
     <TypeScriptCompile Include="typings\globals\request\index.d.ts" />
     <TypeScriptCompile Include="typings\globals\serve-favicon\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\socket.io\index.d.ts" />
     <TypeScriptCompile Include="typings\globals\stylus\index.d.ts" />
     <TypeScriptCompile Include="typings\index.d.ts" />
     <TypeScriptCompile Include="typings\modules\serve-static\index.d.ts" />
