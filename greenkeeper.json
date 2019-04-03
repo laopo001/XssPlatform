@@ -1,0 +1,9 @@
+{
+  "groups": {
+    "default": {
+      "packages": [
+        "Xss/package.json"
+      ]
+    }
+  }
+}
