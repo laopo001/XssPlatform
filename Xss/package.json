@@ -10,25 +10,25 @@
     "name": "ldh"
   },
   "dependencies": {
-    "body-parser": "~1.8.1",
+    "body-parser": "~1.18.3",
     "co": "^4.6.0",
-    "cookie-parser": "~1.3.3",
-    "debug": "~2.0.0",
-    "express": "~4.9.0",
+    "cookie-parser": "~1.4.4",
+    "debug": "~4.1.1",
+    "express": "~4.16.4",
     "express-session": "^1.14.1",
-    "jade": "~1.6.0",
-    "log4js": "^0.6.38",
+    "jade": "~1.11.0",
+    "log4js": "^4.1.0",
     "moment": "^2.15.1",
-    "morgan": "~1.3.0",
+    "morgan": "~1.9.1",
     "mysql": "^2.11.1",
     "node-uuid": "^1.4.7",
-    "orm": "^3.1.0",
+    "orm": "^5.0.4",
     "request": "^2.75.0",
-    "serve-favicon": "~2.1.3",
-    "stylus": "0.42.3"
+    "serve-favicon": "~2.5.0",
+    "stylus": "0.54.5"
   },
   "devDependencies": {
-    "javascript-obfuscator": "^0.9.1",
-    "socket.io": "^1.7.3"
+    "javascript-obfuscator": "^0.18.1",
+    "socket.io": "^2.2.0"
   }
 }
